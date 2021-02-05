@@ -1,0 +1,33 @@
+// Colors
+
+:root {
+    --primary-color: #353b48;
+    --secondary-color-light: #72afe0;
+    --secondary-color: #20639b;
+    --secondary-color-dark: #105186;
+    --white-color: #fff;
+    //--grey-color: rgb(163, 160, 160);
+    --grey-color: #ababa3;
+    --color: #2f2f2f;
+    --color-2: #191919;
+}
+
+$secondary-color-light: rgb(114, 175, 224);
+$secondary-color: rgb(32, 99, 155);
+$secondary-color-dark: rgb(16, 81, 134);
+
+
+// Fonts
+$main-font: 1.6rem;
+
+//
+$border-radius: 3px;
+
+$margin-primary: 2rem;
+$margin-big: 5rem;
+$margin-section:10rem;
+
+$box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.2);
+$box-shadow-article: 0 1.5rem 4rem rgba(0,0,0,0.8);
+
+$logo-position: 5rem;

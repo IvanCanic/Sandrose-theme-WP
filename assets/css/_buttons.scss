@@ -1,0 +1,55 @@
+.btn {
+    &,
+    &:link
+    &:visited {
+        display: inline-block;
+        //color: var(--secondary-color);
+        color: var(--white-color);
+        margin-top: $margin-primary;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 1.5rem 3rem;
+        border: 2px solid var(--white-color);
+        //border-bottom: 5px solid var(--secondary-color);
+        //border-top: 5px solid var(--secondary-color);
+        //font-weight: bold;
+        border-radius: 15px;
+        //border-radius: $border-radius;
+        cursor: pointer;
+        box-shadow: $box-shadow;
+        //background: var(--secondary-color-light);
+        background: var(--secondary-color);
+        transform: scale(1);
+        opacity:1;
+        transition: all 0.3s ease;
+    }
+
+    &:hover,
+    &:focus {
+        //background: var(--secondary-color);
+        //color: var(--white-color);
+        transform: scale(0.95);
+        box-shadow: $box-shadow;
+        opacity:0.8;
+    }
+
+    &--read-more {
+        display: inline-block;
+        margin-bottom: $margin-primary;
+        color: var(--secondary-color);
+        border-radius: 2rem;
+        border: 1px solid var(--secondary-color);
+        padding: 1rem 2.5rem;
+        width: max-content;
+        text-decoration: none;
+        
+        transition: all .4s ease;
+    }
+
+    &--read-more:hover {
+        text-decoration: underline;
+        transform: scale(1.2);
+    }
+}
+

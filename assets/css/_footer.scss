@@ -1,0 +1,125 @@
+.footer {
+    //background: var(--color-2);
+    //background: var(--secondary-color);
+    //background: darken( $secondary-color, 10%);
+    background: darken($color: #353b48, $amount: 5%);
+    //border: 5px solid var(--secondary-color);
+    padding-top: 4rem;
+    clip-path: polygon(0 0, 25% 30px, 50% 0, 75% 30px, 100% 0, 100% 100%, 0 100%);
+    margin-top: $margin-section;
+
+    &__body {
+        display: flex;
+        flex-flow: wrap;
+        //background: var(--color-2);
+        //background: var(--secondary-color);
+        //background: darken($secondary-color, 10%);
+        background: darken($color: #353b48, $amount: 5%);
+
+        @media(max-width: 992px) {
+            justify-content: center;
+        }
+    }
+
+    &__logo {
+        flex: 0 0 33.3333%;
+        padding: 2rem;
+
+        img {
+            width:100%;
+        }
+    }
+
+    &__description {
+        flex: 0 0 33.3333%;
+        padding: 2rem;
+        color: var(--grey-color);
+
+        @media(max-width: 992px) {
+            flex: 0 0 80%;
+            text-align: center;
+        }
+    }
+
+    &__tags {
+        flex: 0 0 33.3333%;
+        padding: 2rem;
+
+        @media(max-width: 992px) {
+            flex: 0 0 80%;
+        }
+
+        @media(max-width: 600px) {
+            padding: 1rem;
+        }
+    }
+
+    &__tags-list {
+        list-style: none;
+        display: flex;
+        flex-flow: wrap;
+        @include footerLists;
+
+        @media(max-width: 992px) {
+            justify-content: center;
+        }
+    }
+
+    &__tags-header {
+        border-left: 3px solid var(--white-color);
+        border-right: 3px solid var(--white-color);
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        padding: 0.5rem 1.2rem;
+        color: var(--white-color);
+        width: fit-content;
+        margin-bottom: $margin-primary;
+
+        @media(max-width: 992px) {
+            margin: 0 auto $margin-primary auto;
+        }
+    }
+
+    &__data {
+        //background: #0f0f0f;
+        background: darken($color: #353b48, $amount: 10%);
+        padding: 4rem;
+        color: var(--grey-color);
+        font-size: 1.4rem;
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        @media(max-width: 768px) {
+            justify-content: center;
+        }
+    }
+
+    &__copy {
+        letter-spacing: 1px;
+        line-height: 1.5;
+
+        @media(max-width: 768px) {
+            margin-bottom: $margin-primary;
+            text-align: center;
+        }
+    }
+
+    &__social {
+        margin-top: 1rem;
+        list-style: none;
+        display: flex;
+        flex-flow: wrap;
+        @include footerLists;
+    }
+
+    .author-link {
+        color: var(--secondary-color);
+        transition: color .3s ease;
+    }
+
+    .author-link:hover {
+        color: var(--grey-color);
+    }
+}
